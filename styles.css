@@ -1,0 +1,365 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 700px) {
+    #logo ul li img{
+     display: none;
+    }
+    
+   
+  }
+body {
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: rgba(0,91,191,1);
+    position: fixed;
+    z-index:2;
+    width: 100%;
+    height:auto;
+    padding : 1rem;
+    display :flex;
+    justify-content :space-around;
+}
+nav {
+    float: right;
+}
+nav ul {
+    list-style: none;
+    display:flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+    padding-top: 23px;
+    position: relative;
+    justify-content: space-around; 
+}
+#logo ul {
+    list-style: none;
+    display:flex;
+}
+#logo ul li {
+    display: inline;
+    margin-right: 1rem;
+    padding-top: 0;
+    position: relative;
+    justify-content: space-around; 
+ 
+}
+#logo ul li img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#logo ul li h2{
+    margin:0;
+    padding-top: 8%;
+    color:white;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    color: #FF0000;
+  }
+  /*hero*/
+
+.hero input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero {
+    position: relative;
+    text-align: center;
+    
+    padding: 18rem;
+    width:100%;
+  }
+  
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+  
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.content {
+    position: relative;
+    z-index: 1; 
+    padding: 1rem;
+    color:#005BBF ;
+}
+  
+.button {
+    display: inline-block;
+    background-color: #FF0000;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+.logo {
+    float: left;
+    display: flex; 
+    align-items: center;
+    max-width: 75px;
+    width: 100%; 
+    height: auto; 
+    margin-top:px; 
+}
+nav {
+    float: right; 
+    
+}
+/*feature*/
+
+ .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 125px;
+    width :20vw;
+    color:#005BBF;
+  
+}
+ .desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 65vw;
+  height: 125px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+#features h2 {
+    text-align: center;
+}
+.flex {
+    display: flex;
+    padding-top:10px ; 
+}
+.level1 img{
+    height: 300px;
+    width:100%;
+    object-fit: cover;
+}
+#features{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: #f4f4f4;
+}
+/*pricing*/
+
+#pricing {
+    padding-top: 8rem;
+    margin-top: 50px; 
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid blue;
+    border-radius: 20px;
+}
+.product:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      
+}
+
+  
+.product .level {
+    background-color: #005BBF;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+  
+.product h2 {
+    margin-top: 0;
+    font-size:20px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    color:#FF0000
+}
+li {
+    text-decoration: none;
+}
+.product ul {
+    list-style-type: none ; 
+    padding-left: 0;
+    
+}  
+.product ul > li {
+    margin-bottom: 7px;
+   
+}
+.product button {
+    background-color:#005BBF;
+    border : 1px solid;
+    margin-bottom: 13px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product button:hover {
+    background-color: #005BEF;
+    transition: background-color 1s;
+    color: white;
+
+}
+/*contacy*/
+#contact{
+    margin-top: 70px;
+    margin-bottom: 0px;
+   
+}
+label{
+    color: #005BBF;
+    font-family: "Comic Sans MS", cursive;
+}
+.contact-container {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+       
+       
+    }
+.contact-info {
+    margin-bottom: 20px; 
+    margin-top: 100px;
+    }
+.contact-info h2 {
+    margin-top: 0;
+    text-decoration: underline; 
+    text-decoration-color: #005BBF;
+    font-family: "Comic Sans MS", cursive;
+    }
+.contact-form {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: left;
+    }
+.contact-form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+.contact-form input,
+.contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+.contact-form textarea {
+        resize: vertical;
+    }
+.contact-form  .container {
+        text-align: center;
+
+    }
+.contact-form button {
+        background-color:#005BBF;
+        border : 1px solid;
+        margin-bottom: 13px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px;
+        margin-bottom: 100px; 
+      
+     
+    }
+.contact-form button:hover {
+        background-color: #005BEF;
+    transition: background-color 1s;
+    color: white;
+    }
+.social-icons {
+        margin-top: 20px;
+        float: right;
+    }
+.social-icon {
+        display: inline-block;
+        margin: 0 10px;
+        color: white;
+    }
+.social-icons a:hover{
+    color: #FF0000;
+}
+footer {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #005BBF;
+    color: #fff;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+}
+
+.footer-content {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content :space-around;
+    float: right;
+    text-align: left;
+    color: white;
+   
+}
+.footer-content ul{
+    list-style: none;
+}
+.footer-row {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.footer-row ul li a {
+    text-decoration: none;
+    color: white;
+}
+.footer-row a:hover {
+    color: #FF0000;
+  }
+
+.footer-social {
+    margin-top: 20px;
+    text-align: center;
+    float: right;
+}
